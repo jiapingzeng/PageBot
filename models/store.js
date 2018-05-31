@@ -4,7 +4,8 @@ const Schema = mongoose.Schema
 var storeSchema = new Schema({
     name: { type: String, required: true },
     lat: { type: Number, required: true },
-    long: { type: Number, required: true }
+    long: { type: Number, required: true },
+    joinCode: { type: String, required: true}
 })
 
 var Store = mongoose.model('Store', storeSchema)

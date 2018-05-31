@@ -7,11 +7,12 @@ var bodyParser = require('body-parser')
 var request = require('request')
 var path = require('path')
 var mongoose = require('mongoose')
-
 var app = express()
 var server = http.createServer(app)
 var io = socketIo(server)
 var port = process.env.PORT || 3001
+var Store = require('./models/store.js')
+
 server.listen(port)
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
@@ -88,6 +89,18 @@ app.get('/webhook', (req, res, next) => {
             res.sendStatus(403)
         }
     }
+})
+
+//TODO: add auth here
+app.post('/addstore', (req, res, next)=>{
+    let r = JSON.parse(req.body)
+    r.joinCode = shortid.generate()
+
+    var newStore = new Store(r)
+    newStore.save(function(err){
+        if(err) throw err
+    })
+    res.sendStatus(200)
 })
 
 app.post('/webhook', (req, res, next) => {
