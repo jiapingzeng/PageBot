@@ -8,11 +8,14 @@ data = ''
 with open('stores.json', 'r') as file:
     stores = json.load(file)
     for store in stores:
-        store['location'] = {'coordinates': [ float(store['long']), float(store['lat']) ]}
+        if not store['done']:
+            store['location'] = {'coordinates': [ float(store['long']), float(store['lat']) ]}
         # if store['done'] is True:
             # store['done'] = False
-        dat = {'store': json.dumps(store)}
-        requests.post(POST_URL, data = (dat))
+            dat = {'store': json.dumps(store)}
+            requests.post(POST_URL, data = (dat))
+            store['done'] = True
+        # break
     data = stores
     file.close()
 

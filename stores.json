@@ -7,7 +7,7 @@
             "-122.404893",
             "37.784737"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.404893,
@@ -23,7 +23,7 @@
             "-122.4049377",
             "37.7844009"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.4049377,
@@ -39,7 +39,7 @@
             "-122.40469389999998",
             "37.7854871"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.40469389999998,
@@ -55,7 +55,7 @@
             "-122.40491509999998",
             "37.7844141"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.40491509999998,
@@ -71,7 +71,7 @@
             "-122.4065555",
             "37.7845344"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.4065555,
@@ -87,7 +87,7 @@
             "-121.874455",
             "37.674885"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -121.874455,
@@ -103,7 +103,7 @@
             "-122.46898759999999",
             "37.6695616"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.46898759999999,
@@ -119,7 +119,7 @@
             "-122.4308848",
             " 37.7519584"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.4308848,
@@ -135,7 +135,7 @@
             "-122.4308848",
             "37.7519584"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.4308848,
@@ -151,7 +151,7 @@
             "-122.470441",
             "37.6714569"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.470441,
@@ -167,7 +167,7 @@
             "-122.47141670000002",
             "37.6722703"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.47141670000002,
@@ -183,7 +183,7 @@
             "-122.17151430000001",
             "37.4421977"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.17151430000001,
@@ -199,7 +199,7 @@
             "-122.171536",
             "37.442257"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.171536,
@@ -215,7 +215,7 @@
             "-122.171944",
             "37.441797"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.171944,
@@ -231,7 +231,7 @@
             "-122.172529",
             "37.441797"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172529,
@@ -247,7 +247,7 @@
             "-122.17202",
             " 37.443863"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.17202,
@@ -263,7 +263,7 @@
             "-122.171969",
             "37.443743"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.171969,
@@ -279,7 +279,7 @@
             "-122.172338",
             "37.443928"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172338,
@@ -295,7 +295,7 @@
             "-122.171857",
             "37.444096"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.171857,
@@ -311,7 +311,7 @@
             "-122.172099",
             "37.443279"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172099,
@@ -327,7 +327,7 @@
             " -122.171941",
             "37.443101"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.171941,
@@ -343,7 +343,7 @@
             "-122.17229",
             "37.443117"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.17229,
@@ -359,7 +359,7 @@
             "-122.172469",
             "37.442963"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172469,
@@ -375,7 +375,7 @@
             "-122.172232",
             "37.442938"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172232,
@@ -391,7 +391,7 @@
             "-122.172042",
             "37.442772"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172042,
@@ -407,7 +407,7 @@
             " -122.172052",
             "37.442684"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172052,
@@ -423,7 +423,7 @@
             "-122.172221",
             "37.442612"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172221,
@@ -439,7 +439,7 @@
             "122.172358",
             "37.442628"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 122.172358,
@@ -455,7 +455,7 @@
             "-122.172378",
             "37.442535"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172378,
@@ -471,7 +471,7 @@
             "-122.172515",
             "37.442415"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172515,
@@ -487,7 +487,7 @@
             "-122.172618",
             "37.442295"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172618,
@@ -503,7 +503,7 @@
             "-122.172692",
             "37.442153"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172692,
@@ -519,7 +519,7 @@
             "-122.172661",
             "37.442047"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172661,
@@ -535,7 +535,7 @@
             "-122.172844",
             "37.441778"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172844,
@@ -551,7 +551,7 @@
             "-122.172661",
             "37.441238"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172661,
@@ -567,7 +567,7 @@
             "-122.171885",
             "37.443488"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.171885,
@@ -583,7 +583,7 @@
             " -122.172006",
             "37.443392"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172006,
@@ -599,7 +599,7 @@
             "-122.172042",
             "37.442678"
         ],
-        "done": false,
+        "done": true,
         "location": {
             "coordinates": [
                 -122.172042,
