@@ -10,7 +10,7 @@ with open('stores.json', 'r') as file:
         if 'coordinates' not in store:
             store['coordinates'] = [store['long'], store['lat']]
         if ('done' not in store) or store['done'] is False:
-            requests.post(POST_URL, data = json.dumps(store))
+            requests.post(POST_URL, data = (store))
             store['done'] = True
         print(store['name'])
     data = stores
