@@ -278,7 +278,7 @@ var getStoresNearby = (recipientId, lat, long) => {
     Store.aggregate([{
         $geoNear: {
             near: { type: "Point", coordinates: [ long, lat ] },
-            distanceField: "dist",
+            distanceField: "dist.calculated",
             maxDistance: 100,
             num: 5,
             spherical: true
