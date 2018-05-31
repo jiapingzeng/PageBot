@@ -50,7 +50,7 @@ Store.create({
 /*
 Store.aggregate([{
     $geoNear: {
-        near: { type: "Point", coordinates: [-122.142000, 37.423114] },
+        near: { type: "Point", coordinates: [-122.145409, 37.424264] },
         distanceField: "dist",
         maxDistance: 100,
         num: 5,
@@ -123,19 +123,19 @@ app.get('/webhook', (req, res, next) => {
 })
 
 //TODO: add auth here
-app.post('/addstore', (req, res, next)=>{
-    let r = JSON.parse(req.body.store)
-    console.log(r)
+app.post('/addstore', (req, res, next) => {
+    let r = (req.body)
+    console.log(req.body)
     r.joinCode = shortid.generate()
 
     var newStore = new Store(r)
-    newStore.save(function(err){
-        if(err) throw err
+    newStore.save(function (err) {
+        if (err) throw err
     })
     res.sendStatus(200)
 })
 
-app.post('/test', (req, res, next)=>{
+app.post('/test', (req, res, next) => {
     let r = req.body
     console.log(r)
     res.sendStatus(200)
@@ -200,7 +200,7 @@ var receivedMessage = (event) => {
             io.sockets.emit('received message', {
                 id: senderId,
                 message: messageText
-            })  
+            })
         } else if (messageText.toLowerCase() == 'help') {
             getUserLocation(senderId)
         } else {
@@ -293,48 +293,37 @@ var selectLocationOption = (recipientId, stores) => {
 }
 
 var getStoresNearby = (recipientId, lat, long) => {
-    var storeFound = false;
-    var nearbyStores = []
     Store.aggregate([{
         $geoNear: {
-            near: { type: "Point", coordinates: [ long, lat ] },
-            distanceField: "dist.calculated",
+            near: { type: 'Point', coordinates: [long, lat] },
+            distanceField: 'dist.calculated',
             maxDistance: 100,
             num: 5,
             spherical: true
         }
     }]).exec((err, stores) => {
+        console.log('lat: ' + lat + 'long: ' + long)
+        console.log(stores)
         if (err) {
             console.log(err)
+            sendTextMessage(recipientId, 'An error has occured')
         } else {
             if (Array.isArray(stores) && stores.length > 0) {
-                nearbyStores = stores
-                storeFound = true
+                var messageText = ''
+                for (var i = 0; i < stores.length; i++) {
+                    messageText += i == 0 ? '' : '\n'
+                    messageText += (i + 1) + ': ' + stores[i].name
+                }
+                sendTextMessage(recipientId, messageText)
+                // TODO: FIX THIS SHIT
+                setTimeout(() => {
+                    selectLocationOption(recipientId, stores)
+                }, 500)
+            } else {
+                sendTextMessage(recipientId, 'No supported stores found nearby')
             }
         }
     })
-    /*
-    stores.forEach((store) => {
-        if (getDistance(lat, long, store.lat, store.long) < 0.1) {
-            nearbyStores.push(store)
-            storeFound = true
-        }
-    })
-    */    
-    if (storeFound) {
-        var messageText = ''
-        for (var i = 0; i < nearbyStores.length; i++) {
-            messageText += i == 0 ? '' : '\n'
-            messageText += (i + 1) + ': ' + nearbyStores[i].name
-        }
-        sendTextMessage(recipientId, messageText)
-        // TODO: FIX THIS SHIT
-        setTimeout(() => {
-            selectLocationOption(recipientId, nearbyStores)
-        }, 500)
-    } else {
-        sendTextMessage(recipientId, 'No supported stores found nearby')
-    }
 }
 
 var callSendApi = (messageData) => {
