@@ -35,7 +35,7 @@ mongoose.connect(CONNECTION_STRING, (err) => {
 })
 
 var Store = require('./models/store')
-
+// Store.deleteMany({location: {type: "Point", coordinates: [0, 0]}}, function(err){throw err})
 // Create template:
 /*
 Store.create({
