@@ -27,6 +27,7 @@ PageBot asks for your location and matches it with supported business nearby. On
 **SUCCESS**: `200 OK`    
 **ERROR**: `none`
  
+ ---
  
 ### Test
 
