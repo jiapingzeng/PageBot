@@ -23,6 +23,7 @@ PageBot asks for your location and matches it with supported business nearby. On
 }
 ```
 *Note that data MUST be formatted as JSON as a string. The `type` parameter is optional -- if not provided, the location will be assumed to be of type `"Point"`*
+
 **SUCCESS**: `200 OK`    
 **ERROR**: `none`
  
@@ -32,4 +33,4 @@ PageBot asks for your location and matches it with supported business nearby. On
 **URL**: `/test`    
 **METHOD**: `POST`    
 **AUTH**: None    
-Any data is welcome. Output will be logged. Leave us a message :)
+Any data is welcome. Output will be logged. Say hi 🙋 (we won't respond though) 
