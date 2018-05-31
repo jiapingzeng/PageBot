@@ -290,7 +290,7 @@ var getStoresNearby = (recipientId, lat, long) => {
     var nearbyStores = []
     Store.aggregate([{
         $geoNear: {
-            near: { type: "Point", coordinates: [ lat, long ] },
+            near: { type: "Point", coordinates: [ long, lat ] },
             distanceField: "dist",
             maxDistance: 100,
             num: 5,
@@ -300,7 +300,7 @@ var getStoresNearby = (recipientId, lat, long) => {
         if (err) {
             console.log(err)
         } else {
-            if (Array.isArray(stores) && array.length > 0) {
+            if (Array.isArray(stores) && stores.length > 0) {
                 nearbyStores = stores
                 storeFound = true
             }
