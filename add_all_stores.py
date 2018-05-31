@@ -12,6 +12,7 @@ with open('stores.json', 'r') as file:
         if ('done' not in store) or store['done'] is False:
             requests.post(POST_URL, data = json.dumps(store))
             store['done'] = True
+        print(store['name'])
     data = stores
     file.close()
 
