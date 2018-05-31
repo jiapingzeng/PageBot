@@ -135,6 +135,12 @@ app.post('/addstore', (req, res, next)=>{
     res.sendStatus(200)
 })
 
+app.post('/test', (req, res, next)=>{
+    let r = req.body
+    console.log(r)
+    res.sendStatus(200)
+})
+
 app.post('/webhook', (req, res, next) => {
     let body = req.body
     if (body.object === 'page') {
