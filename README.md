@@ -6,11 +6,11 @@ PageBot asks for your location and matches it with supported business nearby. On
 
 # API
 
-#### Add Store 
+### Add Store 
 
 **URL**: `/addstore`     
 **METHOD**: `POST`    
-**AUTH**: NO   
+**AUTH**: None   
 **DATA EXAMPLE**: 
 ```
 { store: '{
@@ -27,9 +27,9 @@ PageBot asks for your location and matches it with supported business nearby. On
 **ERROR**: `none`
  
  
-#### Test
+### Test
 
 **URL**: `/test`    
 **METHOD**: `POST`    
-**AUTH**: NO    
+**AUTH**: None    
 Any data is welcome. Output will be logged. Leave us a message :)
