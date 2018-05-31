@@ -124,8 +124,8 @@ app.get('/webhook', (req, res, next) => {
 
 //TODO: add auth here
 app.post('/addstore', (req, res, next)=>{
-    let r = (req.body)
-    console.log(req.body)
+    let r = JSON.parse(req.body.store)
+    console.log(r)
     r.joinCode = shortid.generate()
 
     var newStore = new Store(r)
