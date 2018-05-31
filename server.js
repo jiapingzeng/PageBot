@@ -26,7 +26,7 @@ const MAPS_URL = process.env.MAPS_URL ? process.env.MAPS_URL : config.get('MAPS_
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY ? process.env.GOOGLE_API_KEY : config.get('GOOGLE_API_KEY')
 const CONNECTION_STRING = process.env.MONGODB_URI ? process.env.MONGODB_URI : config.get('CONNECTION_STRING')
 
-var stores = require('./stores.json')
+//var stores = require('./stores.json')
 
 mongoose.connect(CONNECTION_STRING, (err) => {
     if (err) throw err
@@ -34,6 +34,37 @@ mongoose.connect(CONNECTION_STRING, (err) => {
 })
 
 var Store = require('./models/store')
+
+// Create template:
+/*
+Store.create({
+    name: 'Store 1',
+    location: {
+        coordinates: [ -122.142000, 37.423114 ]
+    }
+})
+*/
+
+// Test getting data
+/*
+Store.aggregate([{
+    $geoNear: {
+        near: { type: "Point", coordinates: [-122.142000, 37.423114] },
+        distanceField: "dist",
+        maxDistance: 100,
+        num: 5,
+        spherical: true
+    }
+}]).exec((err, stores) => {
+    if (err) {
+        console.log(err)
+    } else {
+        stores.forEach((store) => {
+            console.log(store.name)
+        })
+    }
+})
+*/
 
 // VERY GHETTO APPROACH PLZ CHANGE
 var users = []
@@ -244,12 +275,32 @@ var selectLocationOption = (recipientId, stores) => {
 var getStoresNearby = (recipientId, lat, long) => {
     var storeFound = false;
     var nearbyStores = []
+    Store.aggregate([{
+        $geoNear: {
+            near: { type: "Point", coordinates: [ lat, long ] },
+            distanceField: "dist",
+            maxDistance: 100,
+            num: 5,
+            spherical: true
+        }
+    }]).exec((err, stores) => {
+        if (err) {
+            console.log(err)
+        } else {
+            if (Array.isArray(stores) && array.length > 0) {
+                nearbyStores = stores
+                storeFound = true
+            }
+        }
+    })
+    /*
     stores.forEach((store) => {
         if (getDistance(lat, long, store.lat, store.long) < 0.1) {
             nearbyStores.push(store)
             storeFound = true
         }
     })
+    */    
     if (storeFound) {
         var messageText = ''
         for (var i = 0; i < nearbyStores.length; i++) {
