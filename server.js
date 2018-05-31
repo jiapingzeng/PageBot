@@ -47,10 +47,10 @@ Store.create({
 */
 
 // Test getting data
-/*
+
 Store.aggregate([{
     $geoNear: {
-        near: { type: "Point", coordinates: [-122.142000, 37.423114] },
+        near: { type: "Point", coordinates: [-122.145409, 37.424264] },
         distanceField: "dist",
         maxDistance: 100,
         num: 5,
@@ -65,7 +65,7 @@ Store.aggregate([{
         })
     }
 })
-*/
+
 
 // VERY GHETTO APPROACH PLZ CHANGE
 var users = []
@@ -297,13 +297,15 @@ var getStoresNearby = (recipientId, lat, long) => {
     var nearbyStores = []
     Store.aggregate([{
         $geoNear: {
-            near: { type: "Point", coordinates: [ long, lat ] },
-            distanceField: "dist.calculated",
+            near: { type: 'Point', coordinates: [ long, lat ] },
+            distanceField: 'dist.calculated',
             maxDistance: 100,
             num: 5,
             spherical: true
         }
     }]).exec((err, stores) => {
+        console.log('lat: ' + lat + 'long: ' + long)
+        console.log(stores)
         if (err) {
             console.log(err)
         } else {
