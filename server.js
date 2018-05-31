@@ -47,7 +47,7 @@ Store.create({
 */
 
 // Test getting data
-
+/*
 Store.aggregate([{
     $geoNear: {
         near: { type: "Point", coordinates: [-122.145409, 37.424264] },
@@ -65,7 +65,7 @@ Store.aggregate([{
         })
     }
 })
-
+*/
 
 // VERY GHETTO APPROACH PLZ CHANGE
 var users = []
