@@ -6,7 +6,8 @@ var storeSchema = new Schema({
     location: {
         type: { type: String, default: 'Point' },
         coordinates: { type: [Number], default: [0, 0] }
-    }
+    },
+    joinCode: { type: String, required: true } //used to organize staff... later
 })
 
 storeSchema.index({ location: '2dsphere' })
