@@ -133,7 +133,7 @@ app.post('/addstore', (req, res, next) => {
 
     var newStore = new Store(r)
     newStore.save(function (err) {
-        if (err) throw err
+        if (err) res.sendStatus(500)
     })
     res.sendStatus(200)
 })

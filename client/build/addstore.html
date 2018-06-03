@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Add Store</title>
     
-<meta name="viewport" content="width=320, initial-scale=10.0">
+<meta name="viewport" content="width=320, initial-scale=1.5">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style type="text/css">
@@ -42,7 +42,7 @@
         Longitude:
         <input id="long" pattern="^-?\d+(,\d+)*(\.\d+(e\d+)?)?$" required>
         <button type="button" id="gpsbutton" style="display: inline"> Use GPS </button>
-        <input type="submit" value="Submit"  style="display: inline">
+        <input type="submit" id="submit" value="Submit"  style="display: inline">
     </form>
     
     <script>
@@ -62,6 +62,13 @@
             tempLong = pos.coords.longitude;
         };
 
+        var resetForm = function(){
+            $("#name").val("");
+            $("#lat").val("");
+            $("#long").val("");
+            $("#submit").disabled = false;
+        }
+
         if ('geolocation' in navigator) {
             navigator.geolocation.getCurrentPosition(changeCoords);
             navigator.geolocation.watchPosition(changeCoords, function(e) { /*do nothing on err*/ }, {
@@ -70,16 +77,27 @@
         }
         $("#main").submit(function(e) {
             e.preventDefault()
+            $("#submit").disabled = true;
             var endpoint = "https://pagebot2018.herokuapp.com/addstore";
             var long = document.getElementById('long').value;
             var lat = document.getElementById('lat').value;
             var name = document.getElementById('name').value;
             var data = {
-                store: '"name":"' + name + '", "location":{"coordinates":[' + long + ', ' + lat + ']}'
+                store : `{
+                  "name": "${name}",
+                  "location": {
+                      "coordinates": [${long}, ${lat}]
+                  }  
+                }`
             };
-
-            $.post(endpoint, JSON.stringify(data), function(res) {
-                alert(res);
+            $.post(endpoint, data)
+            .done(function(){
+                alert("Success!");
+                resetForm();
+            })
+            .fail(function(){
+                alert("Your store could not be sent. Please try again later.");
+                resetForm();
             });
         })
     </script>
