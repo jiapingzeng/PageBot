@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Add Store</title>
+    
+<meta name="viewport" content="width=320, initial-scale=10.0">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style type="text/css">
         body {
@@ -67,7 +70,7 @@
         }
         $("#main").submit(function(e) {
             e.preventDefault()
-            var endpoint = "http://pagebot2018.herokuapp.com/addstore";
+            var endpoint = "https://pagebot2018.herokuapp.com/addstore";
             var long = document.getElementById('long').value;
             var lat = document.getElementById('lat').value;
             var name = document.getElementById('name').value;
