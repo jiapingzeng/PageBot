@@ -78,7 +78,7 @@
                 store: '"name":"' + name + '", "location":{"coordinates":[' + long + ', ' + lat + ']}'
             };
 
-            $.post(endpoint, data, function(res) {
+            $.post(endpoint, JSON.stringify(data), function(res) {
                 alert(res);
             });
         })
