@@ -108,7 +108,7 @@ io.on('connection', (socket) => {
 app.get('/', (req, res, next) => {
     res.render('index')
 })
-app.get('/appstore', (req, res next) => {
+app.get('/appstore', (req, res, next) => {
     res.render('addstore')
 })
 
