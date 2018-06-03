@@ -22,10 +22,10 @@ PageBot asks for your location and matches it with supported business nearby. On
      }"     
 }
 ```
-*Note that data MUST be formatted as JSON as a string. Coordinates are in the format `[long, lat]`. The `type` parameter is optional -- if not provided, the location will be assumed to be of type `"Point"`. *
+*Note that data MUST be formatted as JSON as a string. Coordinates are in the format `[long, lat]`. The `type` parameter is optional -- if not provided, the location will be assumed to be of type `"Point"`.*
 
 **SUCCESS**: `200 OK`    
-**ERROR**: `none`
+**ERROR**: `500 ERROR`
  
  ---
  
