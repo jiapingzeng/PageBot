@@ -108,6 +108,9 @@ io.on('connection', (socket) => {
 app.get('/', (req, res, next) => {
     res.render('index')
 })
+app.get('/appstore', (req, res next) => {
+    res.render('addstore')
+})
 
 app.get('/webhook', (req, res, next) => {
     let mode = req.query['hub.mode']

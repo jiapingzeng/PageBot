@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Store</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+        
+        form * {
+            display: block;
+        }
+        
+        form {
+            text-align: left;
+            width: auto;
+            display: inline-block;
+        }
+        
+        input {
+            margin-bottom: 16px
+        }
+    </style>
+</head>
+
+<body>
+    <form id="main">
+        <h1>Add a store</h1> 
+
+        Name:
+        <input id="name" type="text" required> 
+
+        Latitude:
+        <input id="lat" pattern="^-?\d+(,\d+)*(\.\d+(e\d+)?)?$" required> 
+
+        Longitude:
+        <input id="long" pattern="^-?\d+(,\d+)*(\.\d+(e\d+)?)?$" required>
+        <button type="button" id="gpsbutton" style="display: inline"> Use GPS </button>
+        <input type="submit" value="Submit"  style="display: inline">
+    </form>
+    
+    <script>
+        var tempLat;
+        var tempLong;
+        var updateLocation = function(){
+            if(!isNaN(tempLat) && !isNaN(tempLong)){
+                $("#lat").val(Number.parseFloat(tempLat).toFixed(7));
+                $("#long").val(Number.parseFloat(tempLong).toFixed(7));
+            }
+        }
+
+        document.getElementById("gpsbutton").addEventListener("click", updateLocation);
+
+        var changeCoords = function(pos) {
+            tempLat = pos.coords.latitude;
+            tempLong = pos.coords.longitude;
+        };
+
+        if ('geolocation' in navigator) {
+            navigator.geolocation.getCurrentPosition(changeCoords);
+            navigator.geolocation.watchPosition(changeCoords, function(e) { /*do nothing on err*/ }, {
+                enableHighAccuracy: true
+            })
+        }
+        $("#main").submit(function(e) {
+            e.preventDefault()
+            var endpoint = "http://pagebot2018.herokuapp.com/addstore";
+            var long = document.getElementById('long').value;
+            var lat = document.getElementById('lat').value;
+            var name = document.getElementById('name').value;
+            var data = {
+                store: '"name":"' + name + '", "location":{"coordinates":[' + long + ', ' + lat + ']}'
+            };
+
+            $.post(endpoint, data, function(res) {
+                alert(res);
+            });
+        })
+    </script>
+</body>
+
+</html>
