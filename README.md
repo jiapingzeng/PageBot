@@ -13,16 +13,16 @@ PageBot asks for your location and matches it with supported business nearby. On
 **AUTH**: None   
 **DATA EXAMPLE**: 
 ```
-{ store: '{
+{ store: "{
     	"name": "Cole Hardware", 
     	"location": {
         	"type": "Point",
            	"coordinates": [-122.404893, 37.784737]
         }
-     }' 
+     }"     
 }
 ```
-*Note that data MUST be formatted as JSON as a string. The `type` parameter is optional -- if not provided, the location will be assumed to be of type `"Point"`*
+*Note that data MUST be formatted as JSON as a string. Coordinates are in the format `[long, lat]`. The `type` parameter is optional -- if not provided, the location will be assumed to be of type `"Point"`. *
 
 **SUCCESS**: `200 OK`    
 **ERROR**: `none`
