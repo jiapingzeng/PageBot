@@ -2,609 +2,230 @@
     {
         "name": "Cole Hardware",
         "lat": "37.784737",
-        "long": "-122.404893",
-        "coordinates": [
-            "-122.404893",
-            "37.784737"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.404893,
-                37.784737
-            ]
-        }
-    },
-    {
+        "long": "-122.404893"
+    }, {
         "name": "ThoughtWorks",
         "lat": "37.7844009",
-        "long": "-122.4049377",
-        "coordinates": [
-            "-122.4049377",
-            "37.7844009"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.4049377,
-                37.7844009
-            ]
-        }
-    },
-    {
+        "long": "-122.4049377"
+    }, {
         "name": "Fleet Feet Sports",
         "lat": "37.7854871",
-        "long": "-122.40469389999998",
-        "coordinates": [
-            "-122.40469389999998",
-            "37.7854871"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.40469389999998,
-                37.7854871
-            ]
-        }
-    },
-    {
+        "long": "-122.40469389999998"
+    }, {
         "name": "500 Startups",
-        "lat": "37.7844141",
-        "long": "-122.40491509999998",
-        "coordinates": [
-            "-122.40491509999998",
-            "37.7844141"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.40491509999998,
-                37.7844141
-            ]
-        }
+        "lat":"37.7844141",
+        "long":"-122.40491509999998"
     },
     {
         "name": "Tiffany & Co",
-        "lat": "37.7845344",
-        "long": "-122.4065555",
-        "coordinates": [
-            "-122.4065555",
-            "37.7845344"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.4065555,
-                37.7845344
-            ]
-        }
+        "lat":"37.7845344",
+        "long":"-122.4065555"
     },
     {
         "name": "Safeway",
         "lat": "37.674885",
-        "long": "-121.874455",
-        "coordinates": [
-            "-121.874455",
-            "37.674885"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -121.874455,
-                37.674885
-            ]
-        }
+        "long":"-121.874455"
+
     },
     {
         "name": "Zales",
         "lat": "37.6695616",
-        "long": "-122.46898759999999",
-        "coordinates": [
-            "-122.46898759999999",
-            "37.6695616"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.46898759999999,
-                37.6695616
-            ]
-        }
+        "long": "-122.46898759999999"
     },
     {
-        "name": "Whole Foods",
-        "lat": " 37.7519584",
-        "long": "-122.4308848",
-        "coordinates": [
-            "-122.4308848",
-            " 37.7519584"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.4308848,
-                37.7519584
-            ]
-        }
+        "name":"Whole Foods",
+        "lat":" 37.7519584",
+        "long": "-122.4308848"
     },
     {
-        "name": "Best Buy",
-        "lat": "37.7519584",
-        "long": "-122.4308848",
-        "coordinates": [
-            "-122.4308848",
-            "37.7519584"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.4308848,
-                37.7519584
-            ]
-        }
+        "name":"Best Buy",
+        "lat":"37.7519584",
+        "long": "-122.4308848"
     },
     {
         "name": "Forever 21",
         "lat": "37.6714569",
-        "long": "-122.470441",
-        "coordinates": [
-            "-122.470441",
-            "37.6714569"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.470441,
-                37.6714569
-            ]
-        }
+        "long": "-122.470441"
     },
     {
         "name": "Disney Store",
         "lat": "37.6722703",
-        "long": "-122.47141670000002",
-        "coordinates": [
-            "-122.47141670000002",
-            "37.6722703"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.47141670000002,
-                37.6722703
-            ]
-        }
+        "long": "-122.47141670000002"
     },
     {
         "name": "Macy's",
         "lat": "37.4421977",
-        "long": "-122.17151430000001",
-        "coordinates": [
-            "-122.17151430000001",
-            "37.4421977"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.17151430000001,
-                37.4421977
-            ]
-        }
+        "long": "-122.17151430000001"
     },
     {
         "name": "Benefit Brow Bar at Macy's",
         "lat": "37.442257",
-        "long": "-122.171536",
-        "coordinates": [
-            "-122.171536",
-            "37.442257"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.171536,
-                37.442257
-            ]
-        }
+        "long": "-122.171536"
     },
     {
         "name": "Godiva Chocolatier",
         "lat": "37.441797",
-        "long": "-122.171944",
-        "coordinates": [
-            "-122.171944",
-            "37.441797"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.171944,
-                37.441797
-            ]
-        }
+        "long": "-122.171944"
     },
     {
         "name": "Apple Store",
         "lat": "37.441797",
-        "long": "-122.172529",
-        "coordinates": [
-            "-122.172529",
-            "37.441797"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172529,
-                37.441797
-            ]
-        }
+        "long": "-122.172529"
     },
     {
         "name": "American Girl",
-        "lat": " 37.443863",
-        "long": "-122.17202",
-        "coordinates": [
-            "-122.17202",
-            " 37.443863"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.17202,
-                37.443863
-            ]
-        }
+        "lat":" 37.443863",
+        "long": "-122.17202"
     },
     {
         "name": "bare Minerals",
         "lat": "37.443743",
-        "long": "-122.171969",
-        "coordinates": [
-            "-122.171969",
-            "37.443743"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.171969,
-                37.443743
-            ]
-        }
+        "long": "-122.171969"
     },
     {
         "name": "Pottery Barn",
         "lat": "37.443928",
-        "long": "-122.172338",
-        "coordinates": [
-            "-122.172338",
-            "37.443928"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172338,
-                37.443928
-            ]
-        }
+        "long": "-122.172338"
     },
     {
         "name": "Abercrombie & Fitch",
         "lat": "37.444096",
-        "long": "-122.171857",
-        "coordinates": [
-            "-122.171857",
-            "37.444096"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.171857,
-                37.444096
-            ]
-        }
+        "long": "-122.171857"
     },
     {
         "name": "The Stanford Shop",
         "lat": "37.443279",
-        "long": "-122.172099",
-        "coordinates": [
-            "-122.172099",
-            "37.443279"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172099,
-                37.443279
-            ]
-        }
+        "long": "-122.172099"
     },
     {
         "name": "Burberry",
         "lat": "37.443101",
-        "long": " -122.171941",
-        "coordinates": [
-            " -122.171941",
-            "37.443101"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.171941,
-                37.443101
-            ]
-        }
+        "long": " -122.171941"
     },
     {
         "name": "Williams-Sonoma",
         "lat": "37.443117",
-        "long": "-122.17229",
-        "coordinates": [
-            "-122.17229",
-            "37.443117"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.17229,
-                37.443117
-            ]
-        }
+        "long": "-122.17229"
     },
     {
         "name": "BOSS Store",
         "lat": "37.442963",
-        "long": "-122.172469",
-        "coordinates": [
-            "-122.172469",
-            "37.442963"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172469,
-                37.442963
-            ]
-        }
+        "long": "-122.172469"
     },
     {
         "name": "Bose Showcase Store",
         "lat": "37.442938",
-        "long": "-122.172232",
-        "coordinates": [
-            "-122.172232",
-            "37.442938"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172232,
-                37.442938
-            ]
-        }
+        "long": "-122.172232"
     },
     {
         "name": "Tiffany & Co",
         "lat": "37.442772",
-        "long": "-122.172042",
-        "coordinates": [
-            "-122.172042",
-            "37.442772"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172042,
-                37.442772
-            ]
-        }
+        "long": "-122.172042"
     },
     {
         "name": "Kiehl's since 1851",
         "lat": "37.442684",
-        "long": " -122.172052",
-        "coordinates": [
-            " -122.172052",
-            "37.442684"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172052,
-                37.442684
-            ]
-        }
+        "long": " -122.172052"
     },
     {
         "name": "CH Premier Jewelers",
         "lat": "37.442612",
-        "long": "-122.172221",
-        "coordinates": [
-            "-122.172221",
-            "37.442612"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172221,
-                37.442612
-            ]
-        }
+        "long": "-122.172221"
     },
     {
         "name": "Emenegildo Zegna",
         "lat": "37.442628",
-        "long": "122.172358",
-        "coordinates": [
-            "122.172358",
-            "37.442628"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                122.172358,
-                37.442628
-            ]
-        }
+        "long": "122.172358"
     },
     {
         "name": "Frette",
         "lat": "37.442535",
-        "long": "-122.172378",
-        "coordinates": [
-            "-122.172378",
-            "37.442535"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172378,
-                37.442535
-            ]
-        }
+        "long": "-122.172378"
     },
     {
         "name": "Louis Vuitton",
         "lat": "37.442415",
-        "long": "-122.172515",
-        "coordinates": [
-            "-122.172515",
-            "37.442415"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172515,
-                37.442415
-            ]
-        }
+        "long": "-122.172515"
     },
     {
         "name": "Sephora",
         "lat": "37.442295",
-        "long": "-122.172618",
-        "coordinates": [
-            "-122.172618",
-            "37.442295"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172618,
-                37.442295
-            ]
-        }
+        "long": "-122.172618"
     },
     {
         "name": "Tesla",
         "lat": "37.442153",
-        "long": "-122.172692",
-        "coordinates": [
-            "-122.172692",
-            "37.442153"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172692,
-                37.442153
-            ]
-        }
+        "long": "-122.172692"
     },
     {
         "name": "Coach",
         "lat": "37.442047",
-        "long": "-122.172661",
-        "coordinates": [
-            "-122.172661",
-            "37.442047"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172661,
-                37.442047
-            ]
-        }
+        "long": "-122.172661"
     },
     {
         "name": "Brooks Brothers",
         "lat": "37.441778",
-        "long": "-122.172844",
-        "coordinates": [
-            "-122.172844",
-            "37.441778"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172844,
-                37.441778
-            ]
-        }
+        "long": "-122.172844"
     },
     {
         "name": "Neiman Marcus",
         "lat": "37.441238",
-        "long": "-122.172661",
-        "coordinates": [
-            "-122.172661",
-            "37.441238"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172661,
-                37.441238
-            ]
-        }
+        "long": "-122.172661"
     },
     {
         "name": "Brighton Collectables",
         "lat": "37.443488",
-        "long": "-122.171885",
-        "coordinates": [
-            "-122.171885",
-            "37.443488"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.171885,
-                37.443488
-            ]
-        }
+        "long": "-122.171885"
     },
     {
         "name": "Marimekko",
         "lat": "37.443392",
-        "long": " -122.172006",
-        "coordinates": [
-            " -122.172006",
-            "37.443392"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172006,
-                37.443392
-            ]
-        }
+        "long": " -122.172006"
     },
     {
         "name": "The Art of Shaving",
         "lat": "37.442678",
-        "long": "-122.172042",
-        "coordinates": [
-            "-122.172042",
-            "37.442678"
-        ],
-        "done": true,
-        "location": {
-            "coordinates": [
-                -122.172042,
-                37.442678
-            ]
-        }
+        "long": "-122.172042"
+    },
+    {
+        "name": "3rd Street Market",
+        "lat": "40.42755305407329",
+        "long": "-86.92014276981354"
+    },
+    {
+        "name": "Amazon @ Purdue",
+        "lat": "40.42754686074847",
+        "long": "-86.92106438752512"
+    },
+    {
+        "name": "Tarkington Market",
+        "lat": "40.43081980465223",
+        "long": "-86.92072749137878"
+    },
+    {
+        "name": "UPS Store",
+        "lat": "40.42514984938082",
+        "long": "-86.91144168376923"
+    },
+    {
+        "name": "Urban Market",
+        "lat": "40.4250089621592",
+        "long": "-86.91162139177322"
+    },
+    {
+        "name": "Purdue Federal Credit Union",
+        "lat": "40.42521314644231",
+        "long": "-86.91112250089645"
+    },
+    {
+        "name": "The Union Hotel",
+        "lat": "40.42501304585095",
+        "long": "-86.91068798303604"
+    },
+    {
+        "name": "The Purdue Shop",
+        "lat": "40.42466797302456",
+        "long": "-86.91066116094589"
     }
 ]
+
